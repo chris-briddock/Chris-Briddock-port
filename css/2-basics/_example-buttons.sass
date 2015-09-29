@@ -1,0 +1,34 @@
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]
+  display: block
+  height: 45px
+  width: 60%
+  color: $dribbble
+  background: #fff
+  text-align: center
+  font-size: 1rem
+  font-weight: 600
+  text-decoration: none
+  white-space: nowrap
+  border-radius: 2px
+  cursor: pointer
+  box-sizing: border-box
+  transition: 0.3s ease-in-out
+  outline: 0
+  margin: 0 auto
+  box-shadow: 0px 3px 2px 0px #d9d9d9
+  padding-bottom: 2rem
+
+  &:hover,
+  &:active,
+  &:focus
+    color: darken($dribbble, 10%)
+    outline: 0
+    box-shadow: 0px 3px 2px 0px darken(#d9d9d9, 10%)
+
+@media only screen and (min-width: 600px)
+  .button
+    width: 40%

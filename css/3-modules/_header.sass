@@ -1,0 +1,83 @@
+.logo
+  float: left
+  text-indent: -9999em
+  background: url('../img/logo.svg')
+  background-repeat: no-repeat
+  +size(100px)
+  margin-top: 1rem
+header
+  height: 100vh
+  .fixed
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 60%
+    right: 0
+    z-index: 99999
+    height: 100px
+    width: 100px
+    @media (min-width: 400px)
+      left: 70%
+    @media (min-width: 600px)
+      left: 80%
+    @media (min-width: 1000px)
+      left: 86%
+  .container .pos-text
+    position: relative
+  .header-text
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    h1
+      text-align: center
+      color: $primary-green
+      white-space: nowrap
+
+      margin-bottom: 12px
+      font-weight: 600
+
+    p
+      text-align: center
+
+.chevron-down
+  text-indent: -9999em
+  background: url('../img/chevron-down.svg')
+  background-repeat: no-repeat
+  +size(50px)
+  position: absolute
+  left: 50%
+  top: 70%
+  transform: translate(-50%, 70%)
+  cursor: pointer
+
+.scrollToTop
+  display: none
+  opacity: 1
+  position: fixed
+  top: 90%
+  right: 0%
+  left: 90%
+  bottom: 0%
+  color: $primary-grey
+  cursor: pointer
+  z-index: 97
+
+
+
+
+@media only screen and (min-width: 640px)
+  .header-text
+    h1
+      font-size: 3.998rem
+
+    p
+      font-size: 1.5rem
+
+  .go-up
+    display: block
+
+@media only screen and (min-width: 750px)
+  .header-text
+    p
+      white-space: nowrap

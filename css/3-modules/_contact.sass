@@ -1,0 +1,47 @@
+#contact
+  h2
+    padding: 1.5rem 0
+    color: $primary-green
+
+
+form
+  width: 70%
+  margin: 0 auto
+
+  input[type="submit"]
+    background: $primary-green
+
+    color: white
+
+    &:hover
+      background: $secondary-green
+      color: darken(white, 10%)
+
+  input, textarea
+    padding: 10px
+
+
+    &:focus
+      outline: 0
+
+  input[type="email"], input[type="text"], textarea
+    outline: 0
+    border: 1px solid $primary-green
+
+  input[type="email"], input[type="text"], textarea
+    width: 100%
+    margin-bottom: 2rem
+
+@media only screen and (min-width: 800px)
+  input[type="text"], input[type="email"]
+    width: calc(50% - 1rem) !important
+    display: inline-block
+
+  input[type="text"]
+    margin-right: 1.5rem
+
+  textarea
+    height: 10rem
+
+#placeholder
+  display: block !important
